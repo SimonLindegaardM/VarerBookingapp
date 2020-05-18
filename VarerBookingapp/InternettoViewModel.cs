@@ -60,7 +60,8 @@ namespace VarerBookingapp
             HentData = new RelayCommand(HentDataFraDiskAsync);
             DanData();
         }
-
+        ///test GLeb
+        ///Test Gleb
 
         /// <summary>
         /// metode til at tilføje en ny ordreblomst til listen
