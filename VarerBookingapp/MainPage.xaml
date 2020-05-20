@@ -9,7 +9,16 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <ListView SelectedItem="{x:Bind ViewModel.SelectedOrdreVarer, Mode=TwoWay}" ItemsSource="{x:Bind ViewModel.OC_varer}" HorizontalAlignment="Left" Height="375" Margin="502,146,0,0" VerticalAlignment="Top" Width="291">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FFFFB900" Offset="0.03"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <ListView SelectedItem="{x:Bind ViewModel.SelectedOrdreVarer, Mode=TwoWay}" ItemsSource="{x:Bind ViewModel.OC_varer}" HorizontalAlignment="Left" Height="802" Margin="875,35,0,0" VerticalAlignment="Top" Width="615">
+            <ListView.Background>
+                <ImageBrush Stretch="Fill"/>
+            </ListView.Background>
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="local:TilføjVarer">
                     <StackPanel Orientation="Horizontal">
