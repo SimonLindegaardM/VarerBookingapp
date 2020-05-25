@@ -9,7 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid Background="#FFFFB900">
-        <ListView SelectedItem="{x:Bind ViewModel.SelectedOrdreVarer, Mode=TwoWay}" ItemsSource="{x:Bind ViewModel.OC_varer}" HorizontalAlignment="Left" Height="802" Margin="1259,143,0,0" VerticalAlignment="Top" Width="615">
+        <ListView SelectedItem="{x:Bind ViewModel.SelectedOrdreVarer, Mode=TwoWay}" ItemsSource="{x:Bind ViewModel.OC_varer}" HorizontalAlignment="Left" Height="802" Margin="875,188,0,0" VerticalAlignment="Top" Width="615">
             <ListView.Background>
                 <AcrylicBrush TintColor="#CCDE0000" TintOpacity="0.5"/>
             </ListView.Background>
@@ -22,13 +22,13 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <TextBox HorizontalAlignment="Left" Margin="1410,87,0,0" Description="Navn Varer" Text="{x:Bind Path=ViewModel.NavnVarer, Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FFC96A1C" BorderBrush="Red" FocusVisualPrimaryBrush="White" FocusVisualSecondaryBrush="#99FF0000" Foreground="White"/>
-        <TextBox HorizontalAlignment="Left" Margin="1510,87,0,0" Description="Antal" Text="{x:Bind Path=ViewModel.AntalVarer, Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FFC96A1C" BorderBrush="Red" FocusVisualPrimaryBrush="White" FocusVisualSecondaryBrush="#99FF0000" Foreground="White"/>
-        <Button Command="{x:Bind ViewModel.AddNyVarer,Mode=TwoWay}" Content="Tilføj Varer" Height="51" Margin="1259,87,0,0" VerticalAlignment="Top" Width="117" Background="#FFC96A1C"/>
-        <Button Command="{x:Bind ViewModel.SletSelectedVarer, Mode=TwoWay}" Content="Slet Varer" Margin="1757,87,0,0" VerticalAlignment="Top" Height="51" Width="117" RenderTransformOrigin="0.5,0.521" Background="#FFC96A1C"/>
+        <TextBox HorizontalAlignment="Left" Margin="1026,132,0,0" Description="Navn Varer" Text="{x:Bind Path=ViewModel.NavnVarer, Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FFC96A1C" BorderBrush="Red" FocusVisualPrimaryBrush="White" FocusVisualSecondaryBrush="#99FF0000" Foreground="White"/>
+        <TextBox HorizontalAlignment="Left" Margin="1126,132,0,0" Description="Antal" Text="{x:Bind Path=ViewModel.AntalVarer, Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FFC96A1C" BorderBrush="Red" FocusVisualPrimaryBrush="White" FocusVisualSecondaryBrush="#99FF0000" Foreground="White"/>
+        <Button Command="{x:Bind ViewModel.AddNyVarer,Mode=TwoWay}" Content="Tilføj Varer" Height="51" Margin="875,132,0,0" VerticalAlignment="Top" Width="117" Background="#FFC96A1C"/>
+        <Button Command="{x:Bind ViewModel.SletSelectedVarer, Mode=TwoWay}" Content="Slet Varer" Margin="1373,132,0,0" VerticalAlignment="Top" Height="51" Width="117" RenderTransformOrigin="0.5,0.521" Background="#FFC96A1C"/>
         <Button Command="{x:Bind ViewModel.GemData, Mode=TwoWay}" Content="Gem" Height="52" Margin="10,938,0,0" VerticalAlignment="Top" Width="85" Background="#FFC96A1C"/>
         <Button Command="{x:Bind Mode=TwoWay, Path=ViewModel.HentData}" Content="Hent" Height="52" Margin="100,938,0,0" VerticalAlignment="Top" Width="85" Background="#FFC96A1C"/>
-        <muxc:NavigationView x:Name="nvSample" Header="This is Header Text" PaneDisplayMode="Top" Margin="0,0,0,1039">
+        <muxc:NavigationView x:Name="nvSample" Header="This is Header Text" PaneDisplayMode="Top" Margin="0,0,0,959">
             <muxc:NavigationView.MenuItems>
                 <muxc:NavigationViewItem  Content="Menu Item1" Tag="SamplePage1" />
                 <muxc:NavigationViewItem  Content="Menu Item2" Tag="SamplePage2" />
