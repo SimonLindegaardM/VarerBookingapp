@@ -29,10 +29,10 @@
         <Button Command="{x:Bind ViewModel.GemData, Mode=TwoWay}" Content="Gem" Height="52" Margin="10,938,0,0" VerticalAlignment="Top" Width="85" Background="#FFC96A1C"/>
         <Button Command="{x:Bind Mode=TwoWay, Path=ViewModel.HentData}" Content="Hent" Height="52" Margin="100,938,0,0" VerticalAlignment="Top" Width="85" Background="#FFC96A1C"/>
 
-        <muxc:Button Content="Hjem" Margin="100,96,0,0" VerticalAlignment="Top" Height="62" Width="76" Click="click_hjem" Background="#33EC0D0D"/>
-        <muxc:Button Content="Om Os" Margin="215,96,0,0" VerticalAlignment="Top" Height="62" Width="87" Click="click_omos" Background="#33DA0D0D"/>
-        <muxc:Button Content="Indkøbskurv" Margin="340,96,0,0" VerticalAlignment="Top" Height="62" Width="81" Click="click_indkøbskurv" Background="#33E61414"/>
-        <muxc:Button Content="Login/Opret" Margin="453,96,0,0" VerticalAlignment="Top" Height="62" Width="78" Click="click_loginopret" Background="#33E41111"/>
+        <muxc:Button Content="Hjem" Margin="8,10,0,0" VerticalAlignment="Top" Height="58" Width="264" Click="click_hjem" Background="#33EC0D0D"/>
+        <muxc:Button Content="Om Os" Margin="408,10,0,0" VerticalAlignment="Top" Height="58" Width="302" Click="click_omos" Background="#33DA0D0D"/>
+        <muxc:Button Content="Indkøbskurv" Margin="842,10,0,0" VerticalAlignment="Top" Height="58" Width="282" Click="click_indkøbskurv" Background="#33E61414"/>
+        <muxc:Button Content="Login/Opret" Margin="1235,10,0,0" VerticalAlignment="Top" Height="58" Width="271" Click="click_loginopret" Background="#33E41111"/>
 
     </Grid>
 </Page>
