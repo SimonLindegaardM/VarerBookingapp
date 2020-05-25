@@ -30,10 +30,10 @@
         <Button Command="{x:Bind Mode=TwoWay, Path=ViewModel.HentData}" Content="Hent" Height="52" Margin="100,938,0,0" VerticalAlignment="Top" Width="85" Background="#FFC96A1C"/>
         <muxc:NavigationView x:Name="nvSample" Header="This is Header Text" PaneDisplayMode="Top" Margin="0,0,0,959">
             <muxc:NavigationView.MenuItems>
-                <muxc:NavigationViewItem  Content="Menu Item1" Tag="SamplePage1" />
-                <muxc:NavigationViewItem  Content="Menu Item2" Tag="SamplePage2" />
-                <muxc:NavigationViewItem  Content="Menu Item3" Tag="SamplePage3" />
-                <muxc:NavigationViewItem  Content="Menu Item4" Tag="SamplePage4" />
+                <muxc:NavigationViewItem  Content="Hjem" Tag="SamplePage1" />
+                <muxc:NavigationViewItem  Content="Om Os" Tag="SamplePage2" />
+                <muxc:NavigationViewItem  Content="Indkøbskurv" Tag="SamplePage3" />
+                <muxc:NavigationViewItem  Content="Login / Opret" Tag="SamplePage4" />
             </muxc:NavigationView.MenuItems>
         </muxc:NavigationView>
 
