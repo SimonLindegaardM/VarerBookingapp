@@ -4,7 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:VarerBookingapp"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:muxc="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
@@ -34,7 +34,15 @@
         <Button Command="{x:Bind ViewModel.SletSelectedVarer, Mode=TwoWay}" Content="Slet Varer" Margin="1373,132,0,0" VerticalAlignment="Top" Height="51" Width="117" RenderTransformOrigin="0.5,0.521" Background="#FFC96A1C"/>
         <Button Command="{x:Bind ViewModel.GemData, Mode=TwoWay}" Content="Gem" Height="52" Margin="10,938,0,0" VerticalAlignment="Top" Width="85" Background="#FFC96A1C"/>
         <Button Command="{x:Bind Mode=TwoWay, Path=ViewModel.HentData}" Content="Hent" Height="52" Margin="100,938,0,0" VerticalAlignment="Top" Width="85" Background="#FFC96A1C"/>
-
+        <muxc:NavigationView x:Name="nvSample" Header="This is Header Text" PaneDisplayMode="Top">
+            <muxc:NavigationView.MenuItems>
+                <muxc:NavigationViewItem  Content="Menu Item1" Tag="SamplePage1" />
+                <muxc:NavigationViewItem  Content="Menu Item2" Tag="SamplePage2" />
+                <muxc:NavigationViewItem  Content="Menu Item3" Tag="SamplePage3" />
+                <muxc:NavigationViewItem  Content="Menu Item4" Tag="SamplePage4" />
+            </muxc:NavigationView.MenuItems>
+            <Frame x:Name="contentFrame"/>
+        </muxc:NavigationView>
 
     </Grid>
 </Page>
