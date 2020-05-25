@@ -119,9 +119,21 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Hjem.xaml.cs">
+      <DependentUpon>Hjem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Indkøbskurv.xaml.cs">
+      <DependentUpon>Indkøbskurv.xaml</DependentUpon>
+    </Compile>
     <Compile Include="InternettoViewModel.cs" />
+    <Compile Include="LoginOpret.xaml.cs">
+      <DependentUpon>LoginOpret.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OmOs.xaml.cs">
+      <DependentUpon>OmOs.xaml</DependentUpon>
     </Compile>
     <Compile Include="PersistencyService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -148,9 +160,25 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Hjem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Indkøbskurv.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoginOpret.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="OmOs.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>

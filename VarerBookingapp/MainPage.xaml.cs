@@ -29,7 +29,23 @@ namespace VarerBookingapp
 
         private void contentFrame_Navigated(object sender, NavigationEventArgs e)
         {
-
+            Frame.Navigate(typeof(Hjem));
+        }
+        private void click_hjem(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Hjem));
+        }
+        private void click_omos(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(OmOs));
+        }
+        private void click_indkøbskurv(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Indkøbskurv));
+        }
+        private void click_loginopret(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(LoginOpret));
         }
     }
 }

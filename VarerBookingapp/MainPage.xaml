@@ -6,7 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:muxc="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="1516">
 
     <Grid Background="#FFFFB900">
         <ListView SelectedItem="{x:Bind ViewModel.SelectedOrdreVarer, Mode=TwoWay}" ItemsSource="{x:Bind ViewModel.OC_varer}" HorizontalAlignment="Left" Height="802" Margin="875,188,0,0" VerticalAlignment="Top" Width="615">
@@ -28,14 +28,11 @@
         <Button Command="{x:Bind ViewModel.SletSelectedVarer, Mode=TwoWay}" Content="Slet Varer" Margin="1373,132,0,0" VerticalAlignment="Top" Height="51" Width="117" RenderTransformOrigin="0.5,0.521" Background="#FFC96A1C"/>
         <Button Command="{x:Bind ViewModel.GemData, Mode=TwoWay}" Content="Gem" Height="52" Margin="10,938,0,0" VerticalAlignment="Top" Width="85" Background="#FFC96A1C"/>
         <Button Command="{x:Bind Mode=TwoWay, Path=ViewModel.HentData}" Content="Hent" Height="52" Margin="100,938,0,0" VerticalAlignment="Top" Width="85" Background="#FFC96A1C"/>
-        <muxc:NavigationView x:Name="nvSample" Header="This is Header Text" PaneDisplayMode="Top" Margin="0,0,0,959">
-            <muxc:NavigationView.MenuItems>
-                <muxc:NavigationViewItem  Content="Hjem" Tag="SamplePage1" />
-                <muxc:NavigationViewItem  Content="Om Os" Tag="SamplePage2" />
-                <muxc:NavigationViewItem  Content="Indkøbskurv" Tag="SamplePage3" />
-                <muxc:NavigationViewItem  Content="Login / Opret" Tag="SamplePage4" />
-            </muxc:NavigationView.MenuItems>
-        </muxc:NavigationView>
+
+        <muxc:Button Content="Hjem" Margin="100,96,0,0" VerticalAlignment="Top" Height="62" Width="76" Click="click_hjem" Background="#33EC0D0D"/>
+        <muxc:Button Content="Om Os" Margin="215,96,0,0" VerticalAlignment="Top" Height="62" Width="87" Click="click_omos" Background="#33DA0D0D"/>
+        <muxc:Button Content="Indkøbskurv" Margin="340,96,0,0" VerticalAlignment="Top" Height="62" Width="81" Click="click_indkøbskurv" Background="#33E61414"/>
+        <muxc:Button Content="Login/Opret" Margin="453,96,0,0" VerticalAlignment="Top" Height="62" Width="78" Click="click_loginopret" Background="#33E41111"/>
 
     </Grid>
 </Page>
