@@ -10,7 +10,7 @@
 
     <Grid Background="#FFFFB900" Margin="0,0,0,10">
         <TextBlock  HorizontalAlignment="Left" Margin="12,32,0,0" Text="Hjem" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" Width="101" FontSize="36"/>
-        <ListView SelectedItem="{x:Bind ViewModel.SelectedOrdreVarer, Mode=TwoWay}" ItemsSource="{x:Bind ViewModel.OC_varer}" HorizontalAlignment="Left" Height="739" Margin="875,176,0,0" VerticalAlignment="Top" Width="615">
+        <ListView SelectedItem="{x:Bind ViewModel.SelectedOrdreVarer, Mode=TwoWay}" ItemsSource="{x:Bind ViewModel.OC_varer}" HorizontalAlignment="Left" Height="511" Margin="54,245,0,0" VerticalAlignment="Top" Width="863">
             <ListView.Background>
                 <AcrylicBrush TintColor="#CCDE0000" TintOpacity="0.5"/>
             </ListView.Background>
@@ -24,12 +24,12 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <TextBox HorizontalAlignment="Left" Margin="997,125,0,0" Description="Navn Varer" Text="{x:Bind Path=ViewModel.NavnVarer, Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Margin="1070,125,0,0" Description="Antal" Text="{x:Bind Path=ViewModel.AntalVarer, Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="1122,573,0,0" Description="Navn Varer" Text="{x:Bind Path=ViewModel.NavnVarer, Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="1214,573,0,0" Description="Pris" Text="{x:Bind Path=ViewModel.AntalVarer, Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBox HorizontalAlignment="Left" Margin="1026,120,0,0" Description="Navn Varer" Text="{x:Bind Path=ViewModel.NavnVarer, Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FFC96A1C" BorderBrush="Red" FocusVisualPrimaryBrush="White" FocusVisualSecondaryBrush="#99FF0000" Foreground="White" Height="0" Grid.Row="1" Width="68"/>
         <TextBox HorizontalAlignment="Left" Margin="1126,120,0,0" Description="Antal" Text="{x:Bind Path=ViewModel.AntalVarer, Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FFC96A1C" BorderBrush="Red" FocusVisualPrimaryBrush="White" FocusVisualSecondaryBrush="#99FF0000" Foreground="White" Height="0" Grid.Row="1" Width="64"/>
-        <Button Command="{x:Bind ViewModel.AddNyVarer,Mode=TwoWay}" Content="Tilføj Varer" Height="51" Margin="875,120,0,0" VerticalAlignment="Top" Width="117" Background="#FFC96A1C" Grid.Row="1"/>
-        <Button Command="{x:Bind ViewModel.SletSelectedVarer, Mode=TwoWay}" Content="Slet Varer" Margin="1373,120,0,0" VerticalAlignment="Top" Height="51" Width="117" RenderTransformOrigin="0.5,0.521" Background="#FFC96A1C" Grid.Row="1"/>
+        <Button Command="{x:Bind ViewModel.AddNyVarer,Mode=TwoWay}" Content="Tilføj Varer" Height="51" Margin="977,573,0,0" VerticalAlignment="Top" Width="117" Background="#FFC96A1C"/>
+        <Button Command="{x:Bind ViewModel.SletSelectedVarer, Mode=TwoWay}" Content="Slet Varer" Margin="1311,573,0,0" VerticalAlignment="Top" Height="51" Width="117" RenderTransformOrigin="0.5,0.521" Background="#FFC96A1C"/>
         <Button Command="{x:Bind ViewModel.GemData, Mode=TwoWay}" Content="Gem" Height="52" Margin="11,863,0,0" VerticalAlignment="Top" Width="85" Background="#FFC96A1C"/>
         <Button Command="{x:Bind Mode=TwoWay, Path=ViewModel.HentData}" Content="Hent" Height="52" Margin="101,863,0,0" VerticalAlignment="Top" Width="85" Background="#FFC96A1C"/>
 
