@@ -13,18 +13,24 @@
             <RowDefinition Height="38*"/>
             <RowDefinition Height="457*"/>
         </Grid.RowDefinitions>
-        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10,0,10,0"
-                    HorizontalAlignment="Left" VerticalAlignment="Center">
-            <Button x:Name="Hjem" Content="Hjem" Margin="10,0,10,0" Height="60" Width="259" FontSize="30" Click="click_hjem" Background="#33EC0D0D"/>
-            <Button x:Name="OmOs" Content="Om Os" Margin="10,0,10,0" Height="60" Width="259" FontSize="30" Click="click_omos" Background="#33EC0D0D"/>
-            <Button x:Name="Indkøbskurv" Content="Indkøbskurv" Margin="10,0,10,0" Height="60" Width="259" FontSize="30" Click="click_indkøbskurv" Background="#33EC0D0D"/>
-            <Button x:Name="LoginOpret" Content="Login/Opret" Margin="10,0,10,0" Height="60" Width="259" FontSize="30" Click="click_loginopret" Background="#33EC0D0D"/>
+        <StackPanel Orientation="Horizontal" Margin="10,0,0,0"
+                    HorizontalAlignment="Left" VerticalAlignment="Center" Width="1202">
+            <muxc:Image Height="100" Width="86" Source="https://lh5.googleusercontent.com/zY-PXy2wLV_7UPBLZ72MkiA5oGXpGw6g4QXXMxi10UzOamaYhUBWn9Va544_5bZWXVEemTv4OqjbOuyzdQafuFBjgOaOhqmH36OmxwJVC4JBTzHREJmfA6tG3Uts85jGLHkg_jR1"/>
+
+
+            <muxc:Button x:Name="Hjem" Content="Hjem" Margin="10,0,10,0" Height="60" Width="259" FontSize="30" Click="click_hjem" Background="#33EC0D0D"/>
+            <muxc:Button x:Name="OmOs" Content="Om Os" Margin="10,0,10,0" Height="60" Width="259" FontSize="30" Click="click_omos" Background="#33EC0D0D"/>
+            <muxc:Button x:Name="Indkøbskurv" Content="Indkøbskurv" Margin="10,0,10,0" Height="60" Width="259" FontSize="30" Click="click_indkøbskurv" Background="#33EC0D0D"/>
+            <muxc:Button x:Name="LoginOpret" Content="Login/Opret" Margin="10,0,10,0" Height="60" Width="259" FontSize="30" Click="click_loginopret" Background="#33EC0D0D"/>
+
 
         </StackPanel>
         <Frame Background="#FFFFB900" muxc:Grid.Row="1"
-               x:Name="frame" HorizontalAlignment="Center" VerticalAlignment="Center" Width="1494" Height="984"/>
-        <TextBox HorizontalAlignment="Left" Margin="1026,120,0,0" Description="Navn Varer" Text="{x:Bind Path=ViewModel.NavnVarer, Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FFC96A1C" BorderBrush="Red" FocusVisualPrimaryBrush="White" FocusVisualSecondaryBrush="Red" Foreground="Black" Height="0" muxc:Grid.Row="1" Width="68"/>
-        <TextBox HorizontalAlignment="Left" Margin="1126,120,0,0" Description="Antal" Text="{x:Bind Path=ViewModel.AntalVarer, Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FFC96A1C" BorderBrush="Red" FocusVisualPrimaryBrush="White" FocusVisualSecondaryBrush="#99FF0000" Foreground="White" Height="0" muxc:Grid.Row="1" Width="64"/>
+               x:Name="frame" HorizontalAlignment="Center" VerticalAlignment="Center" Width="1494" Height="984">
+            
+
+            <Image HorizontalAlignment="Center" Height="796" VerticalAlignment="Center" Width="928" Source="https://lh5.googleusercontent.com/zY-PXy2wLV_7UPBLZ72MkiA5oGXpGw6g4QXXMxi10UzOamaYhUBWn9Va544_5bZWXVEemTv4OqjbOuyzdQafuFBjgOaOhqmH36OmxwJVC4JBTzHREJmfA6tG3Uts85jGLHkg_jR1"/>
+        </Frame>
 
     </Grid>
 </Page>
