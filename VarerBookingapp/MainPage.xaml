@@ -6,33 +6,25 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:muxc="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="1516">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="1516" Height="1076">
 
-    <Grid Background="#FFFFB900">
-        <ListView SelectedItem="{x:Bind ViewModel.SelectedOrdreVarer, Mode=TwoWay}" ItemsSource="{x:Bind ViewModel.OC_varer}" HorizontalAlignment="Left" Height="802" Margin="875,188,0,0" VerticalAlignment="Top" Width="615">
-            <ListView.Background>
-                <AcrylicBrush TintColor="#CCDE0000" TintOpacity="0.5"/>
-            </ListView.Background>
-            <ListView.ItemTemplate>
-                <DataTemplate x:DataType="local:TilføjVarer">
-                    <StackPanel Orientation="Horizontal">
-                        <TextBox Text="{x:Bind Navn, Mode=TwoWay}"/>
-                        <TextBlock Text="{x:Bind AntalAfVarer, Mode=TwoWay}"/>
-                    </StackPanel>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-        <TextBox HorizontalAlignment="Left" Margin="1026,132,0,0" Description="Navn Varer" Text="{x:Bind Path=ViewModel.NavnVarer, Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FFC96A1C" BorderBrush="Red" FocusVisualPrimaryBrush="White" FocusVisualSecondaryBrush="#99FF0000" Foreground="White"/>
-        <TextBox HorizontalAlignment="Left" Margin="1126,132,0,0" Description="Antal" Text="{x:Bind Path=ViewModel.AntalVarer, Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FFC96A1C" BorderBrush="Red" FocusVisualPrimaryBrush="White" FocusVisualSecondaryBrush="#99FF0000" Foreground="White"/>
-        <Button Command="{x:Bind ViewModel.AddNyVarer,Mode=TwoWay}" Content="Tilføj Varer" Height="51" Margin="875,132,0,0" VerticalAlignment="Top" Width="117" Background="#FFC96A1C"/>
-        <Button Command="{x:Bind ViewModel.SletSelectedVarer, Mode=TwoWay}" Content="Slet Varer" Margin="1373,132,0,0" VerticalAlignment="Top" Height="51" Width="117" RenderTransformOrigin="0.5,0.521" Background="#FFC96A1C"/>
-        <Button Command="{x:Bind ViewModel.GemData, Mode=TwoWay}" Content="Gem" Height="52" Margin="10,938,0,0" VerticalAlignment="Top" Width="85" Background="#FFC96A1C"/>
-        <Button Command="{x:Bind Mode=TwoWay, Path=ViewModel.HentData}" Content="Hent" Height="52" Margin="100,938,0,0" VerticalAlignment="Top" Width="85" Background="#FFC96A1C"/>
+    <Grid Background="#FFFFB900" Margin="0,0,0,10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="457*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10,0,10,0"
+                    HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Button x:Name="Hjem" Content="Hjem" Margin="10,0,10,0" Height="60" Width="259" FontSize="30" Click="click_hjem" Background="#33EC0D0D"/>
+            <Button x:Name="OmOs" Content="Om Os" Margin="10,0,10,0" Height="60" Width="259" FontSize="30" Click="click_omos" Background="#33EC0D0D"/>
+            <Button x:Name="Indkøbskurv" Content="Indkøbskurv" Margin="10,0,10,0" Height="60" Width="259" FontSize="30" Click="click_indkøbskurv" Background="#33EC0D0D"/>
+            <Button x:Name="LoginOpret" Content="Login/Opret" Margin="10,0,10,0" Height="60" Width="259" FontSize="30" Click="click_loginopret" Background="#33EC0D0D"/>
 
-        <muxc:Button Content="Hjem" Margin="8,10,0,0" VerticalAlignment="Top" Height="58" Width="264" Click="click_hjem" Background="#33EC0D0D"/>
-        <muxc:Button Content="Om Os" Margin="408,10,0,0" VerticalAlignment="Top" Height="58" Width="302" Click="click_omos" Background="#33DA0D0D"/>
-        <muxc:Button Content="Indkøbskurv" Margin="842,10,0,0" VerticalAlignment="Top" Height="58" Width="282" Click="click_indkøbskurv" Background="#33E61414"/>
-        <muxc:Button Content="Login/Opret" Margin="1235,10,0,0" VerticalAlignment="Top" Height="58" Width="271" Click="click_loginopret" Background="#33E41111"/>
+        </StackPanel>
+        <Frame Background="#FFFFB900" muxc:Grid.Row="1"
+               x:Name="frame" HorizontalAlignment="Center" VerticalAlignment="Center" Width="1494" Height="984"/>
+        <TextBox HorizontalAlignment="Left" Margin="1026,120,0,0" Description="Navn Varer" Text="{x:Bind Path=ViewModel.NavnVarer, Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FFC96A1C" BorderBrush="Red" FocusVisualPrimaryBrush="White" FocusVisualSecondaryBrush="Red" Foreground="Black" Height="0" muxc:Grid.Row="1" Width="68"/>
+        <TextBox HorizontalAlignment="Left" Margin="1126,120,0,0" Description="Antal" Text="{x:Bind Path=ViewModel.AntalVarer, Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FFC96A1C" BorderBrush="Red" FocusVisualPrimaryBrush="White" FocusVisualSecondaryBrush="#99FF0000" Foreground="White" Height="0" muxc:Grid.Row="1" Width="64"/>
 
     </Grid>
 </Page>

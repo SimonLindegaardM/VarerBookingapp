@@ -22,9 +22,11 @@ namespace VarerBookingapp
     /// </summary>
     public sealed partial class Hjem : Page
     {
+        public InternettoViewModel ViewModel { get; set; }
         public Hjem()
         {
             this.InitializeComponent();
+            ViewModel = new InternettoViewModel();
         }
     }
 }

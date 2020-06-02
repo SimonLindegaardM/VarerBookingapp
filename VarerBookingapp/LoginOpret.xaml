@@ -8,7 +8,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-
+    <Grid Background="#FFFFB900">
+        <TextBlock  HorizontalAlignment="Left" Margin="10,39,0,0" Text="Login/Opret" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" Width="205" FontSize="36"/>
     </Grid>
 </Page>
