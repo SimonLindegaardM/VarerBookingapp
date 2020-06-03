@@ -60,9 +60,7 @@ namespace VarerBookingapp
             HentData = new RelayCommand(HentDataFraDiskAsync);
             DanData();
         }
-        /// <summary>
-        /// metode til at tilføje en ny ordreblomst til listen
-        /// </summary>
+ 
         public void AddVarer()
         {
             TilføjVarer oVarer = new TilføjVarer(NavnVarer, AntalVarer);
@@ -83,19 +81,14 @@ namespace VarerBookingapp
             return OC_varer.Count > 0;
         }
 
-        /// <summary>
-        /// Giver mig Jsonformat for OC_blomster objektet
-        /// </summary>
-        /// <returns></returns>
+
         private string GetJson()
         {
             string json = JsonConvert.SerializeObject(OC_varer);
             return json;
         }
 
-        /// <summary>
-        /// Gemmer json data fra liste i localfolder
-        /// </summary>
+
         private async void GemDataTilDiskAsync()
         {
             this.jsonVarer = GetJson();
@@ -104,28 +97,9 @@ namespace VarerBookingapp
 
             await FileIO.WriteTextAsync(file, this.jsonVarer);
 
-            // await FileIO.WriteTextAsync(file, GetJson());
             SletSelectedVarer.RaiseCanExecuteChanged();
         }
 
-        ///// <summary>
-        ///// metode som modtager en string af json og deserialiserer til objekter af OrdreBlomst
-        ///// </summary>
-        ///// <param name="jsonText"></param>
-        //private void IndsætJson(string jsonText)
-        //{
-        //    List<OrdreBlomst> nyListe =  JsonConvert.DeserializeObject<List<OrdreBlomst>>(jsonText);
-
-        //    foreach (var blomst in nyListe)
-        //    {
-        //        this.OC_blomster.Add(blomst);
-        //    }
-        //    SletSelectedBlomst.RaiseCanExecuteChanged();
-        //}
-
-        /// <summary>
-        /// Henter en json fil fra disken 
-        /// </summary>
         private async void HentDataFraDiskAsync()
         {
             OC_varer.Clear();
@@ -139,21 +113,11 @@ namespace VarerBookingapp
             SletSelectedVarer.RaiseCanExecuteChanged();
 
 
-            //StorageFile file = await localfolder.GetFileAsync(filnavn);
-            //string jsonText = await FileIO.ReadTextAsync(file);
-            //this.OC_blomster.Clear();
-            //IndsætJson(jsonText);
+ 
         }
 
         private void DanData()
         {
-            //for (int i = 0; i < 10; i++)
-            //{
-            //    var blomst = new OrdreBlomst("tulipan", i, "blå");
-            //    OC_blomster.Add(blomst);
-            //}
-
-
         }
 
     }
