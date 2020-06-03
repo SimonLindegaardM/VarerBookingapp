@@ -27,10 +27,6 @@ namespace VarerBookingapp
             ViewModel = new InternettoViewModel();
         }
 
-        private void contentFrame_Navigated(object sender, NavigationEventArgs e)
-        {
-            frame.Navigate(typeof(Hjem));
-        }
         private void click_hjem(object sender, RoutedEventArgs e)
         {
             frame.Navigate(typeof(Hjem));
