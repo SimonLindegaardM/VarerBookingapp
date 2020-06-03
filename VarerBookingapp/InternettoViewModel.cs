@@ -110,10 +110,7 @@ namespace VarerBookingapp
             {
                 this.OC_varer.Add(varer);
             }
-            SletSelectedVarer.RaiseCanExecuteChanged();
-
-
- 
+            SletSelectedVarer.RaiseCanExecuteChanged(); 
         }
 
         private void DanData()

@@ -24,7 +24,6 @@ namespace VarerBookingapp
             string json = JsonConvert.SerializeObject(oc_blomst);
             return json;
         }
-
         /// <param name="jsonText"></param>
         private static List<TilføjVarer> DeserialiserJson(string jsonText)
         {
