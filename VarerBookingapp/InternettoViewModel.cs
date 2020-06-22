@@ -29,8 +29,6 @@ namespace VarerBookingapp
             set { jsonVarer = value; }
         }
 
-        // Test
-
         StorageFolder localfolder = null;
 
         private readonly string filnavn = "varer1.json";
